@@ -1,0 +1,1864 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jagruti &amp; Mayur — February 11, 2027</title>
+
+    <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Inter (Clean Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Botanical Sage Palette Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', "Georgia", "serif"],
+              sans: ['"Inter"', "system-ui", "sans-serif"],
+            },
+            colors: {
+              sage: {
+                deep: "#4A6352", // Deep Sage Green (Primary Accent)
+                hover: "#3A5041", // Darker Sage for Hover States
+                eucalyptus: "#7C9684", // Soft Eucalyptus
+                soft: "#E5EFE8", // Soft Botanical Tint
+                mist: "#F2F6F3", // Light Sage Section Wash
+                border: "#D5E0D8", // Delicate Sage Border
+              },
+              ivory: {
+                warm: "#FAF8F3", // Warm Ivory Background
+                cream: "#F4F0E8", // Soft Cream Surface
+              },
+              charcoal: {
+                DEFAULT: "#2B312D", // Muted Charcoal Text
+                muted: "#5A655E", // Secondary Muted Text
+              },
+              gold: {
+                subtle: "#B89B62", // Subtle Gold Accent
+                soft: "#F4EDE0", // Soft Gold Tint
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html.gujarati body,
+      html.gujarati .font-serif {
+        font-family: "Noto Sans Gujarati", system-ui, sans-serif;
+      }
+
+      /* Subtle Botanical Hero Wash */
+      .botanical-hero-bg {
+        background:
+          radial-gradient(
+            circle at 15% 20%,
+            rgba(124, 150, 132, 0.16) 0%,
+            transparent 45%
+          ),
+          radial-gradient(
+            circle at 85% 80%,
+            rgba(184, 155, 98, 0.12) 0%,
+            transparent 45%
+          ),
+          linear-gradient(180deg, #faf8f3 0%, #f2f6f3 100%);
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-ivory-warm text-charcoal font-sans antialiased selection:bg-sage-soft selection:text-sage-deep overflow-x-hidden"
+  >
+    <!-- =========================================================
+       1. Responsive Sticky Navigation Bar
+       ========================================================= -->
+    <header
+      class="fixed top-0 inset-x-0 z-50 bg-ivory-warm/90 backdrop-blur-md border-b border-sage-border/80"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 sm:h-20">
+          <!-- Monogram: J & M (Bride's Initial First) -->
+          <a
+            href="#home"
+            class="font-serif text-2xl sm:text-3xl tracking-wider text-charcoal hover:text-sage-deep transition-colors flex items-center gap-2"
+          >
+            <span>J</span>
+            <span class="text-gold-subtle italic text-xl sm:text-2xl"
+              >&amp;</span
+            >
+            <span>M</span>
+          </a>
+
+          <!-- Desktop Navigation Links -->
+          <nav
+            class="hidden md:flex items-center gap-7 text-sm tracking-wide text-charcoal-muted"
+          >
+            <a href="#home" class="hover:text-sage-deep transition-colors py-2"
+              >Home</a
+            >
+            <a
+              href="#our-story"
+              class="hover:text-sage-deep transition-colors py-2"
+              >Our Story</a
+            >
+            <a
+              href="#schedule"
+              class="hover:text-sage-deep transition-colors py-2"
+              >Schedule</a
+            >
+            <a
+              href="#travel"
+              class="hover:text-sage-deep transition-colors py-2"
+              >Travel &amp; Stay</a
+            >
+            <label class="sr-only" for="language-select-desktop"
+              >Select language</label
+            >
+            <select
+              id="language-select-desktop"
+              class="rounded-full border border-sage-border bg-white px-3 py-2 text-xs text-charcoal focus:outline-none focus:ring-2 focus:ring-sage-deep/30"
+              aria-label="Select language"
+            >
+              <option value="en">English</option>
+              <option value="gu">ગુજરાતી</option>
+            </select>
+            <a
+              href="#rsvp"
+              class="ml-2 px-6 py-2.5 rounded-full bg-sage-deep text-white font-medium hover:bg-sage-hover transition-colors shadow-sm"
+            >
+              RSVP
+            </a>
+          </nav>
+
+          <!-- Mobile Controls -->
+          <div class="flex items-center gap-2 md:hidden">
+            <label class="sr-only" for="language-select-mobile"
+              >Select language</label
+            >
+            <select
+              id="language-select-mobile"
+              class="rounded-full border border-sage-border bg-white px-2.5 py-2 text-xs text-charcoal focus:outline-none focus:ring-2 focus:ring-sage-deep/30"
+              aria-label="Select language"
+            >
+              <option value="en">English</option>
+              <option value="gu">ગુજરાતી</option>
+            </select>
+            <a
+              href="#rsvp"
+              class="px-4 py-2 rounded-full bg-sage-deep text-white text-xs font-medium hover:bg-sage-hover transition-colors"
+            >
+              RSVP
+            </a>
+            <button
+              id="mobile-menu-btn"
+              type="button"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+              class="p-2.5 rounded-xl border border-sage-border text-charcoal hover:bg-sage-mist transition-colors"
+            >
+              <svg
+                id="menu-icon-open"
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.75"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+              <svg
+                id="menu-icon-close"
+                class="w-5 h-5 hidden"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.75"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-b border-sage-border px-4 pt-2 pb-5 shadow-lg"
+      >
+        <nav class="flex flex-col space-y-1 text-sm">
+          <a
+            href="#home"
+            class="mobile-nav-link px-3 py-3 rounded-xl hover:bg-sage-mist text-charcoal"
+            >Home</a
+          >
+          <a
+            href="#our-story"
+            class="mobile-nav-link px-3 py-3 rounded-xl hover:bg-sage-mist text-charcoal"
+            >Our Story</a
+          >
+          <a
+            href="#schedule"
+            class="mobile-nav-link px-3 py-3 rounded-xl hover:bg-sage-mist text-charcoal"
+            >Schedule</a
+          >
+          <a
+            href="#travel"
+            class="mobile-nav-link px-3 py-3 rounded-xl hover:bg-sage-mist text-charcoal"
+            >Travel &amp; Stay</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- =========================================================
+       2. Full-Screen Hero Section
+       ========================================================= -->
+    <section
+      id="home"
+      class="botanical-hero-bg relative min-h-screen flex items-center justify-center pt-24 pb-16 px-4 sm:px-6 overflow-hidden"
+    >
+      <!-- Delicate Corner Botanical Olive Branch SVGs -->
+      <svg
+        class="pointer-events-none hidden sm:block absolute top-24 left-6 w-36 h-36 text-sage-eucalyptus/25"
+        viewBox="0 0 120 120"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.2"
+      >
+        <path d="M12 108 C35 72, 65 42, 106 14" stroke-linecap="round" />
+        <path
+          d="M40 76 C24 68, 22 52, 34 46 C44 54, 46 66, 40 76 Z"
+          fill="currentColor"
+          fill-opacity="0.15"
+        />
+        <path
+          d="M62 54 C54 38, 62 24, 76 26 C78 38, 72 48, 62 54 Z"
+          fill="currentColor"
+          fill-opacity="0.15"
+        />
+        <path
+          d="M56 64 C74 62, 86 72, 80 84 C68 84, 58 76, 56 64 Z"
+          fill="currentColor"
+          fill-opacity="0.15"
+        />
+      </svg>
+
+      <svg
+        class="pointer-events-none hidden sm:block absolute bottom-8 right-6 w-36 h-36 text-sage-eucalyptus/25 rotate-180"
+        viewBox="0 0 120 120"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.2"
+      >
+        <path d="M12 108 C35 72, 65 42, 106 14" stroke-linecap="round" />
+        <path
+          d="M40 76 C24 68, 22 52, 34 46 C44 54, 46 66, 40 76 Z"
+          fill="currentColor"
+          fill-opacity="0.15"
+        />
+        <path
+          d="M62 54 C54 38, 62 24, 76 26 C78 38, 72 48, 62 54 Z"
+          fill="currentColor"
+          fill-opacity="0.15"
+        />
+        <path
+          d="M56 64 C74 62, 86 72, 80 84 C68 84, 58 76, 56 64 Z"
+          fill="currentColor"
+          fill-opacity="0.15"
+        />
+      </svg>
+
+      <!-- Main Hero Invitation Card -->
+      <div
+        class="relative z-10 w-full max-w-3xl mx-auto text-center px-6 py-12 sm:px-14 sm:py-16 rounded-[2.5rem] bg-white/80 backdrop-blur-sm border border-sage-border shadow-sm"
+      >
+        <!-- Top Botanical Sprig Ornament -->
+        <div class="flex justify-center mb-5 text-sage-deep">
+          <svg
+            class="w-16 h-9"
+            viewBox="0 0 80 40"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.3"
+          >
+            <path
+              d="M40 36 C40 20, 26 10, 8 14 C16 24, 26 28, 40 28"
+              stroke-linecap="round"
+            />
+            <path
+              d="M40 36 C40 20, 54 10, 72 14 C64 24, 54 28, 40 28"
+              stroke-linecap="round"
+            />
+            <path d="M40 36 L40 8" stroke-linecap="round" />
+            <circle cx="40" cy="5" r="2.2" fill="#B89B62" stroke="none" />
+          </svg>
+        </div>
+
+        <p
+          class="text-xs sm:text-sm uppercase tracking-[0.28em] text-charcoal-muted mb-4"
+        >
+          Together With Their Families
+        </p>
+
+        <!-- Couple Names: Bride (Jagruti) ALWAYS First -->
+        <h1
+          class="font-serif text-5xl sm:text-7xl md:text-8xl font-normal tracking-tight text-charcoal leading-none"
+        >
+          Jagruti
+          <span class="italic text-gold-subtle font-normal">&amp;</span> Mayur
+        </h1>
+
+        <p
+          class="mt-6 text-sm sm:text-base text-charcoal-muted font-light max-w-md mx-auto leading-relaxed"
+        >
+          Joyfully invite you to celebrate their love, laughter, and the
+          beginning of forever.
+        </p>
+
+        <!-- Date & Venue -->
+        <div
+          class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-5 text-sm sm:text-base tracking-widest uppercase text-charcoal font-medium"
+        >
+          <span>February 11, 2027</span>
+          <span class="hidden sm:inline text-gold-subtle">•</span>
+          <a
+            href="https://maps.app.goo.gl/ur19EpjvEzmRkADs5"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-sage-deep transition-colors"
+            >Vankar Samaj Bhavan, Joravarnagar</a
+          >
+        </div>
+
+        <!-- Live Countdown Timer -->
+        <div
+          id="countdown"
+          aria-label="Countdown to Jagruti and Mayur's wedding"
+          class="mt-10 grid grid-cols-4 gap-2 sm:gap-4 max-w-md mx-auto"
+        >
+          <div
+            class="p-3 sm:p-4 rounded-2xl bg-ivory-warm border border-sage-border"
+          >
+            <div
+              id="cd-days"
+              class="font-serif text-2xl sm:text-4xl font-semibold text-sage-deep"
+            >
+              --
+            </div>
+            <div
+              class="text-[10px] sm:text-xs uppercase tracking-widest text-charcoal-muted mt-1"
+            >
+              Days
+            </div>
+          </div>
+          <div
+            class="p-3 sm:p-4 rounded-2xl bg-ivory-warm border border-sage-border"
+          >
+            <div
+              id="cd-hours"
+              class="font-serif text-2xl sm:text-4xl font-semibold text-sage-deep"
+            >
+              --
+            </div>
+            <div
+              class="text-[10px] sm:text-xs uppercase tracking-widest text-charcoal-muted mt-1"
+            >
+              Hours
+            </div>
+          </div>
+          <div
+            class="p-3 sm:p-4 rounded-2xl bg-ivory-warm border border-sage-border"
+          >
+            <div
+              id="cd-minutes"
+              class="font-serif text-2xl sm:text-4xl font-semibold text-sage-deep"
+            >
+              --
+            </div>
+            <div
+              class="text-[10px] sm:text-xs uppercase tracking-widest text-charcoal-muted mt-1"
+            >
+              Mins
+            </div>
+          </div>
+          <div
+            class="p-3 sm:p-4 rounded-2xl bg-ivory-warm border border-sage-border"
+          >
+            <div
+              id="cd-seconds"
+              class="font-serif text-2xl sm:text-4xl font-semibold text-sage-deep"
+            >
+              --
+            </div>
+            <div
+              class="text-[10px] sm:text-xs uppercase tracking-widest text-charcoal-muted mt-1"
+            >
+              Secs
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero CTA Buttons -->
+        <div
+          class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4"
+        >
+          <a
+            href="#rsvp"
+            class="w-full sm:w-auto px-9 py-3.5 rounded-full bg-sage-deep text-white text-sm font-medium tracking-wider uppercase hover:bg-sage-hover transition-colors shadow-md"
+          >
+            RSVP Now
+          </a>
+          <a
+            href="#schedule"
+            class="w-full sm:w-auto px-9 py-3.5 rounded-full border border-sage-border bg-white text-charcoal text-sm font-medium tracking-wider uppercase hover:bg-sage-mist transition-colors"
+          >
+            View Schedule
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       3. Our Story Timeline Section
+       ========================================================= -->
+    <section
+      id="our-story"
+      class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-ivory-warm"
+    >
+      <div class="max-w-5xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center max-w-xl mx-auto mb-16">
+          <p
+            class="text-xs uppercase tracking-[0.28em] text-sage-deep font-medium mb-3"
+          >
+            How It All Began
+          </p>
+          <h2 class="font-serif text-4xl sm:text-5xl text-charcoal">
+            Our Story
+          </h2>
+          <div class="mt-4 flex items-center justify-center gap-3">
+            <span class="h-px w-12 bg-sage-border"></span>
+            <span class="w-2 h-2 rounded-full bg-gold-subtle"></span>
+            <span class="h-px w-12 bg-sage-border"></span>
+          </div>
+        </div>
+
+        <!-- 3-Step Milestone Timeline -->
+        <div class="relative">
+          <!-- Connecting line on desktop -->
+          <div
+            class="hidden md:block absolute top-8 left-[16%] right-[16%] h-px bg-sage-border"
+          ></div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+            <!-- Milestone 1 -->
+            <article
+              class="relative flex flex-col items-center text-center bg-white p-8 rounded-3xl border border-sage-border shadow-sm"
+            >
+              <div
+                class="relative z-10 w-16 h-16 rounded-full bg-sage-soft text-sage-deep flex items-center justify-center mb-6 border-4 border-white shadow-sm"
+              >
+                <span class="font-serif text-2xl font-semibold">01</span>
+              </div>
+              <span
+                class="text-xs uppercase tracking-[0.2em] text-gold-subtle font-medium mb-2"
+              >
+                The First Hello
+              </span>
+              <h3 class="font-serif text-2xl sm:text-3xl text-charcoal mb-3">
+                Paths Crossed
+              </h3>
+              <p class="text-sm text-charcoal-muted leading-relaxed">
+                What began as a casual conversation between Jagruti and Mayur
+                quickly turned into hours of shared stories, effortless
+                laughter, and the realization that something special had
+                started.
+              </p>
+            </article>
+
+            <!-- Milestone 2 -->
+            <article
+              class="relative flex flex-col items-center text-center bg-white p-8 rounded-3xl border border-sage-border shadow-sm"
+            >
+              <div
+                class="relative z-10 w-16 h-16 rounded-full bg-sage-soft text-sage-deep flex items-center justify-center mb-6 border-4 border-white shadow-sm"
+              >
+                <span class="font-serif text-2xl font-semibold">02</span>
+              </div>
+              <span
+                class="text-xs uppercase tracking-[0.2em] text-gold-subtle font-medium mb-2"
+              >
+                The Proposal
+              </span>
+              <h3 class="font-serif text-2xl sm:text-3xl text-charcoal mb-3">
+                Forever Begins
+              </h3>
+              <p class="text-sm text-charcoal-muted leading-relaxed">
+                Surrounded by quiet greenery at golden hour, Jagruti and Mayur
+                promised to walk through every season of life side by
+                side—marking the happiest "yes" of their lives.
+              </p>
+            </article>
+
+            <!-- Milestone 3 -->
+            <article
+              class="relative flex flex-col items-center text-center bg-white p-8 rounded-3xl border border-sage-border shadow-sm"
+            >
+              <div
+                class="relative z-10 w-16 h-16 rounded-full bg-sage-soft text-sage-deep flex items-center justify-center mb-6 border-4 border-white shadow-sm"
+              >
+                <span class="font-serif text-2xl font-semibold">03</span>
+              </div>
+              <span
+                class="text-xs uppercase tracking-[0.2em] text-gold-subtle font-medium mb-2"
+              >
+                February 11, 2027
+              </span>
+              <h3 class="font-serif text-2xl sm:text-3xl text-charcoal mb-3">
+                The Big Day
+              </h3>
+              <p class="text-sm text-charcoal-muted leading-relaxed">
+                Now, Jagruti &amp; Mayur cannot wait to gather their cherished
+                family and friends to celebrate their wedding day with music,
+                warmth, and unforgettable memories.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       4. Multi-Event Wedding Schedule Section
+       ========================================================= -->
+    <section
+      id="schedule"
+      class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-sage-mist border-y border-sage-border"
+    >
+      <div class="max-w-5xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center max-w-xl mx-auto mb-16">
+          <p
+            class="text-xs uppercase tracking-[0.28em] text-sage-deep font-medium mb-3"
+          >
+            The Celebrations
+          </p>
+          <h2 class="font-serif text-4xl sm:text-5xl text-charcoal">
+            Wedding Schedule
+          </h2>
+          <p class="mt-4 text-sm text-charcoal-muted">
+            Join Jagruti &amp; Mayur across two joyful days of traditions,
+            music, and celebration.
+          </p>
+        </div>
+
+        <!-- 4 Event Cards (2x2 Grid on Desktop) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <!-- Event 1: Mehendi & Haldi -->
+          <div
+            class="flex flex-col justify-between bg-white p-7 sm:p-8 rounded-3xl border border-sage-border shadow-sm hover:shadow-md transition-shadow"
+          >
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-5">
+                <span
+                  class="text-xs font-semibold uppercase tracking-widest text-sage-deep"
+                >
+                  Day One • Morning
+                </span>
+                <span
+                  class="px-3 py-1 rounded-full text-xs font-medium bg-gold-soft text-charcoal"
+                >
+                  Pastels &amp; Floral
+                </span>
+              </div>
+              <h3 class="font-serif text-2xl sm:text-3xl text-charcoal mb-2">
+                Mehendi &amp; Haldi
+              </h3>
+              <p class="text-sm text-charcoal-muted leading-relaxed mb-6">
+                A sun-drenched garden celebration with intricate henna artistry,
+                marigold petals, acoustic melodies, and refreshing afternoon
+                bites.
+              </p>
+            </div>
+            <div class="pt-5 border-t border-sage-border space-y-2.5 text-sm">
+              <div class="flex items-start gap-3 text-charcoal">
+                <svg
+                  class="w-4 h-4 mt-0.5 text-sage-deep shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+                <span>Wednesday, February 10, 2027</span>
+              </div>
+              <div class="flex items-start gap-3 text-charcoal">
+                <svg
+                  class="w-4 h-4 mt-0.5 text-sage-deep shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>11:00 AM – 3:00 PM</span>
+              </div>
+              <div class="flex items-start gap-3 text-charcoal-muted">
+                <svg
+                  class="w-4 h-4 mt-0.5 text-sage-deep shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <a
+                  href="https://maps.app.goo.gl/YUUsDri3bcFCAUvB9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-sage-deep transition-colors"
+                  >Karol, Surendranagar, Gujarat</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 2: Sangeet Night -->
+          <div
+            class="flex flex-col justify-between bg-white p-7 sm:p-8 rounded-3xl border border-sage-border shadow-sm hover:shadow-md transition-shadow"
+          >
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-5">
+                <span
+                  class="text-xs font-semibold uppercase tracking-widest text-sage-deep"
+                >
+                  Day One • Evening
+                </span>
+                <span
+                  class="px-3 py-1 rounded-full text-xs font-medium bg-sage-soft text-sage-deep"
+                >
+                  Festive Indo-Western
+                </span>
+              </div>
+              <h3 class="font-serif text-2xl sm:text-3xl text-charcoal mb-2">
+                Sangeet Night
+              </h3>
+              <p class="text-sm text-charcoal-muted leading-relaxed mb-6">
+                An unforgettable evening under fairy lights with family dance
+                performances, live music, signature cocktails, and a starlit
+                dinner.
+              </p>
+            </div>
+            <div class="pt-5 border-t border-sage-border space-y-2.5 text-sm">
+              <div class="flex items-start gap-3 text-charcoal">
+                <svg
+                  class="w-4 h-4 mt-0.5 text-sage-deep shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+                <span>Wednesday, February 10, 2027</span>
+              </div>
+              <div class="flex items-start gap-3 text-charcoal">
+                <svg
+                  class="w-4 h-4 mt-0.5 text-sage-deep shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>7:00 PM – 11:00 PM</span>
+              </div>
+              <div class="flex items-start gap-3 text-charcoal-muted">
+                <svg
+                  class="w-4 h-4 mt-0.5 text-sage-deep shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <a
+                  href="https://maps.app.goo.gl/YUUsDri3bcFCAUvB9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-sage-deep transition-colors"
+                  >Karol, Surendranagar, Gujarat</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 3: Wedding Ceremony -->
+          <div
+            class="flex flex-col justify-between bg-white p-7 sm:p-8 rounded-3xl border-2 border-sage-deep/40 shadow-md"
+          >
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-5">
+                <span
+                  class="text-xs font-semibold uppercase tracking-widest text-sage-deep"
+                >
+                  Day Two • Morning
+                </span>
+                <span
+                  class="px-3 py-1 rounded-full text-xs font-medium bg-sage-soft text-sage-deep"
+                >
+                  Traditional Indian
+                </span>
+              </div>
+              <h3 class="font-serif text-2xl sm:text-3xl text-charcoal mb-2">
+                Wedding Ceremony
+              </h3>
+              <p class="text-sm text-charcoal-muted leading-relaxed mb-6">
+                Celebrate the sacred union of Jagruti &amp; Mayur under a
+                traditional mandap, followed by a celebratory lunch
+                with family.
+              </p>
+            </div>
+            <div class="pt-5 border-t border-sage-border space-y-2.5 text-sm">
+              <div class="flex items-start gap-3 text-charcoal">
+                <svg
+                  class="w-4 h-4 mt-0.5 text-sage-deep shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+                <span>Thursday, February 11, 2027</span>
+              </div>
+              <div class="flex items-start gap-3 text-charcoal">
+                <svg
+                  class="w-4 h-4 mt-0.5 text-sage-deep shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>10:30 AM – 1:30 PM</span>
+              </div>
+              <div class="flex items-start gap-3 text-charcoal-muted">
+                <svg
+                  class="w-4 h-4 mt-0.5 text-sage-deep shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <a
+                  href="https://maps.app.goo.gl/ur19EpjvEzmRkADs5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-sage-deep transition-colors"
+                  >Vankar Samaj Bhavan, Joravarnagar</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 4: Evening Reception -->
+          <div
+            class="flex flex-col justify-between bg-white p-7 sm:p-8 rounded-3xl border border-sage-border shadow-sm hover:shadow-md transition-shadow"
+          >
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-5">
+                <span
+                  class="text-xs font-semibold uppercase tracking-widest text-sage-deep"
+                >
+                  Day Two • Evening
+                </span>
+                <span
+                  class="px-3 py-1 rounded-full text-xs font-medium bg-gold-soft text-charcoal"
+                >
+                  Formal / Black Tie
+                </span>
+              </div>
+              <h3 class="font-serif text-2xl sm:text-3xl text-charcoal mb-2">
+                Evening Reception
+              </h3>
+              <p class="text-sm text-charcoal-muted leading-relaxed mb-6">
+                Raise a toast to the newlyweds at a candlelit gala featuring
+                heartfelt speeches, a curated multi-course dinner, and dancing
+                into the night.
+              </p>
+            </div>
+            <div class="pt-5 border-t border-sage-border space-y-2.5 text-sm">
+              <div class="flex items-start gap-3 text-charcoal">
+                <svg
+                  class="w-4 h-4 mt-0.5 text-sage-deep shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+                <span>Thursday, February 11, 2027</span>
+              </div>
+              <div class="flex items-start gap-3 text-charcoal">
+                <svg
+                  class="w-4 h-4 mt-0.5 text-sage-deep shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>7:30 PM Onwards</span>
+              </div>
+              <div class="flex items-start gap-3 text-charcoal-muted">
+                <svg
+                  class="w-4 h-4 mt-0.5 text-sage-deep shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <a
+                  href="https://maps.app.goo.gl/YUUsDri3bcFCAUvB9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-sage-deep transition-colors"
+                  >Karol, Surendranagar, Gujarat</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       5. Travel & Stay Section
+       ========================================================= -->
+    <section
+      id="travel"
+      class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-ivory-warm"
+    >
+      <div class="max-w-5xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center max-w-xl mx-auto mb-16">
+          <p
+            class="text-xs uppercase tracking-[0.28em] text-sage-deep font-medium mb-3"
+          >
+            Accommodations &amp; Logistics
+          </p>
+          <h2 class="font-serif text-4xl sm:text-5xl text-charcoal">
+            Travel &amp; Stay
+          </h2>
+          <p class="mt-4 text-sm text-charcoal-muted">
+            Haldi, Sangeet, the reception, and guest stay will be in Karol.
+            The wedding ceremony will be at Vankar Samaj Bhavan in Joravarnagar.
+          </p>
+        </div>
+
+        <!-- Venue and stay locations -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-12">
+          <div
+            class="bg-white p-7 sm:p-8 rounded-3xl border border-sage-border shadow-sm"
+          >
+            <span
+              class="inline-block px-3 py-1 rounded-full text-xs font-medium bg-sage-soft text-sage-deep mb-4"
+              >Haldi, Sangeet, Reception &amp; Stay</span
+            >
+            <h3 class="font-serif text-2xl sm:text-3xl text-charcoal mb-2">
+              Karol, Surendranagar
+            </h3>
+            <p class="text-sm text-charcoal-muted leading-relaxed mb-5">
+              The celebrations on February 10 and the evening reception on
+              February 11, along with guest accommodation, will be in Karol,
+              Gujarat.
+            </p>
+            <a
+              href="https://maps.app.goo.gl/YUUsDri3bcFCAUvB9"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-sm font-medium text-sage-deep hover:text-sage-hover transition-colors"
+            >
+              Open Karol location in Google Maps
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+
+          <div
+            class="bg-white p-7 sm:p-8 rounded-3xl border border-sage-border shadow-sm"
+          >
+            <span
+              class="inline-block px-3 py-1 rounded-full text-xs font-medium bg-gold-soft text-charcoal mb-4"
+              >Wedding Ceremony</span
+            >
+            <h3 class="font-serif text-2xl sm:text-3xl text-charcoal mb-2">
+              Vankar Samaj Bhavan
+            </h3>
+            <p class="text-sm text-charcoal-muted leading-relaxed mb-5">
+              Join us for the wedding ceremony in Joravarnagar, Surendranagar,
+              Gujarat.
+            </p>
+            <a
+              href="https://maps.app.goo.gl/ur19EpjvEzmRkADs5"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-sm font-medium text-sage-deep hover:text-sage-hover transition-colors"
+            >
+              Open ceremony location in Google Maps
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       6. Interactive RSVP Section
+       ========================================================= -->
+    <section
+      id="rsvp"
+      class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-ivory-warm"
+    >
+      <div class="max-w-2xl mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+          <p
+            class="text-xs uppercase tracking-[0.28em] text-sage-deep font-medium mb-3"
+          >
+            Kindly Reply By January 31, 2027
+          </p>
+          <h2 class="font-serif text-4xl sm:text-5xl text-charcoal">RSVP</h2>
+          <p class="mt-3 text-sm text-charcoal-muted">
+            Let Jagruti &amp; Mayur know which celebrations you will be joining.
+          </p>
+        </div>
+
+        <!-- RSVP Form Card -->
+        <div
+          class="bg-white p-6 sm:p-10 rounded-[2rem] border border-sage-border shadow-sm"
+        >
+          <form id="rsvp-form" novalidate class="space-y-6">
+            <!-- Name & Email -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label
+                  for="guest-name"
+                  class="block text-xs font-medium uppercase tracking-wider text-charcoal-muted mb-2"
+                >
+                  Full Name *
+                </label>
+                <input
+                  id="guest-name"
+                  name="name"
+                  type="text"
+                  required
+                  placeholder="e.g., Ananya Patel"
+                  class="w-full px-4 py-3 rounded-xl bg-ivory-warm border border-sage-border text-sm text-charcoal placeholder:text-charcoal-muted/60 focus:outline-none focus:ring-2 focus:ring-sage-deep/30 focus:border-sage-deep"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="guest-email"
+                  class="block text-xs font-medium uppercase tracking-wider text-charcoal-muted mb-2"
+                >
+                  Email Address *
+                </label>
+                <input
+                  id="guest-email"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="e.g., ananya@example.com"
+                  class="w-full px-4 py-3 rounded-xl bg-ivory-warm border border-sage-border text-sm text-charcoal placeholder:text-charcoal-muted/60 focus:outline-none focus:ring-2 focus:ring-sage-deep/30 focus:border-sage-deep"
+                />
+              </div>
+            </div>
+
+            <!-- Attendance Radio Options -->
+            <div>
+              <span
+                class="block text-xs font-medium uppercase tracking-wider text-charcoal-muted mb-2.5"
+              >
+                Will You Be Attending? *
+              </span>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <label class="cursor-pointer">
+                  <input
+                    type="radio"
+                    name="attendance"
+                    value="Joyfully Accepts"
+                    checked
+                    class="peer sr-only"
+                  />
+                  <div
+                    class="p-4 rounded-xl border border-sage-border bg-ivory-warm peer-checked:border-sage-deep peer-checked:bg-sage-soft/60 flex items-center gap-3 transition-colors"
+                  >
+                    <span
+                      class="w-4 h-4 rounded-full border-2 border-sage-deep flex items-center justify-center shrink-0"
+                    ></span>
+                    <div>
+                      <div class="text-sm font-medium text-charcoal">
+                        Joyfully Accepts
+                      </div>
+                      <div class="text-xs text-charcoal-muted">
+                        Can’t wait to celebrate!
+                      </div>
+                    </div>
+                  </div>
+                </label>
+
+                <label class="cursor-pointer">
+                  <input
+                    type="radio"
+                    name="attendance"
+                    value="Regretfully Declines"
+                    class="peer sr-only"
+                  />
+                  <div
+                    class="p-4 rounded-xl border border-sage-border bg-ivory-warm peer-checked:border-sage-deep peer-checked:bg-sage-soft/60 flex items-center gap-3 transition-colors"
+                  >
+                    <span
+                      class="w-4 h-4 rounded-full border-2 border-charcoal-muted/50 flex items-center justify-center shrink-0"
+                    ></span>
+                    <div>
+                      <div class="text-sm font-medium text-charcoal">
+                        Regretfully Declines
+                      </div>
+                      <div class="text-xs text-charcoal-muted">
+                        Sending love from afar
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Conditional Attending Details -->
+            <div id="attending-details" class="space-y-6">
+              <!-- Guest Count -->
+              <div>
+                <label
+                  for="guest-count"
+                  class="block text-xs font-medium uppercase tracking-wider text-charcoal-muted mb-2"
+                >
+                  Number of Guests (Including You)
+                </label>
+                <select
+                  id="guest-count"
+                  name="guests"
+                  class="w-full sm:w-1/2 px-4 py-3 rounded-xl bg-ivory-warm border border-sage-border text-sm text-charcoal focus:outline-none focus:ring-2 focus:ring-sage-deep/30 focus:border-sage-deep"
+                >
+                  <option value="1">1 Guest</option>
+                  <option value="2" selected>2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                </select>
+              </div>
+
+              <!-- Event Selection Checkboxes -->
+              <div>
+                <span
+                  class="block text-xs font-medium uppercase tracking-wider text-charcoal-muted mb-2.5"
+                >
+                  Events You Will Attend *
+                </span>
+                <div class="space-y-2.5">
+                  <label
+                    class="flex items-center gap-3 p-3.5 rounded-xl bg-ivory-warm border border-sage-border cursor-pointer hover:bg-sage-mist/70 transition-colors"
+                  >
+                    <input
+                      type="checkbox"
+                      name="events"
+                      value="Mehendi & Haldi (Feb 10)"
+                      checked
+                      class="w-4 h-4 rounded accent-[#4A6352]"
+                    />
+                    <span class="text-sm text-charcoal"
+                      >Mehendi &amp; Haldi
+                      <span class="text-charcoal-muted text-xs"
+                        >— Feb 10, 11:00 AM</span
+                      ></span
+                    >
+                  </label>
+
+                  <label
+                    class="flex items-center gap-3 p-3.5 rounded-xl bg-ivory-warm border border-sage-border cursor-pointer hover:bg-sage-mist/70 transition-colors"
+                  >
+                    <input
+                      type="checkbox"
+                      name="events"
+                      value="Sangeet Night (Feb 10)"
+                      checked
+                      class="w-4 h-4 rounded accent-[#4A6352]"
+                    />
+                    <span class="text-sm text-charcoal"
+                      >Sangeet Night
+                      <span class="text-charcoal-muted text-xs"
+                        >— Feb 10, 7:00 PM</span
+                      ></span
+                    >
+                  </label>
+
+                  <label
+                    class="flex items-center gap-3 p-3.5 rounded-xl bg-ivory-warm border border-sage-border cursor-pointer hover:bg-sage-mist/70 transition-colors"
+                  >
+                    <input
+                      type="checkbox"
+                      name="events"
+                      value="Wedding Ceremony (Feb 11)"
+                      checked
+                      class="w-4 h-4 rounded accent-[#4A6352]"
+                    />
+                    <span class="text-sm text-charcoal"
+                      >Wedding Ceremony
+                      <span class="text-charcoal-muted text-xs"
+                        >— Feb 11, 10:30 AM</span
+                      ></span
+                    >
+                  </label>
+
+                  <label
+                    class="flex items-center gap-3 p-3.5 rounded-xl bg-ivory-warm border border-sage-border cursor-pointer hover:bg-sage-mist/70 transition-colors"
+                  >
+                    <input
+                      type="checkbox"
+                      name="events"
+                      value="Evening Reception (Feb 11)"
+                      checked
+                      class="w-4 h-4 rounded accent-[#4A6352]"
+                    />
+                    <span class="text-sm text-charcoal"
+                      >Evening Reception
+                      <span class="text-charcoal-muted text-xs"
+                        >— Feb 11, 7:30 PM</span
+                      ></span
+                    >
+                  </label>
+                </div>
+              </div>
+
+              <!-- Dietary Preferences -->
+              <div>
+                <label
+                  for="dietary-notes"
+                  class="block text-xs font-medium uppercase tracking-wider text-charcoal-muted mb-2"
+                >
+                  Dietary Preferences or Notes (Optional)
+                </label>
+                <textarea
+                  id="dietary-notes"
+                  name="dietary"
+                  rows="3"
+                  placeholder="e.g., Vegetarian, Jain, gluten-free, allergies, or a song request for the Sangeet!"
+                  class="w-full px-4 py-3 rounded-xl bg-ivory-warm border border-sage-border text-sm text-charcoal placeholder:text-charcoal-muted/60 focus:outline-none focus:ring-2 focus:ring-sage-deep/30 focus:border-sage-deep"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Inline Validation Error Box -->
+            <div
+              id="rsvp-error"
+              role="alert"
+              class="hidden p-3.5 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs font-medium"
+            ></div>
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="w-full py-3.5 px-6 rounded-full bg-sage-deep text-white text-sm font-medium uppercase tracking-widest hover:bg-sage-hover transition-colors shadow-md"
+            >
+              Confirm RSVP
+            </button>
+          </form>
+
+          <!-- Personalized Confirmation Card -->
+          <div id="rsvp-confirmation" class="hidden text-center py-4 space-y-6">
+            <div
+              class="w-16 h-16 mx-auto rounded-full bg-sage-soft text-sage-deep flex items-center justify-center"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </div>
+
+            <div>
+              <p
+                class="text-xs uppercase tracking-[0.25em] text-sage-deep font-medium mb-2"
+              >
+                Your Response
+              </p>
+              <h3
+                id="conf-heading"
+                class="font-serif text-3xl sm:text-4xl text-charcoal"
+              >
+                Thank You!
+              </h3>
+              <p
+                id="conf-subtext"
+                class="mt-2 text-sm text-charcoal-muted max-w-md mx-auto"
+              >
+                Jagruti &amp; Mayur are thrilled to celebrate with you!
+              </p>
+            </div>
+
+            <!-- Summary Details -->
+            <div
+              class="text-left bg-ivory-warm p-5 sm:p-6 rounded-2xl border border-sage-border space-y-3 text-sm"
+            >
+              <div
+                class="flex justify-between gap-4 border-b border-sage-border pb-2.5"
+              >
+                <span class="text-charcoal-muted">Guest</span>
+                <span
+                  id="conf-name"
+                  class="font-medium text-charcoal text-right"
+                ></span>
+              </div>
+              <div
+                class="flex justify-between gap-4 border-b border-sage-border pb-2.5"
+              >
+                <span class="text-charcoal-muted">Status</span>
+                <span
+                  id="conf-status"
+                  class="font-medium text-sage-deep text-right"
+                ></span>
+              </div>
+              <div
+                id="conf-guests-row"
+                class="flex justify-between gap-4 border-b border-sage-border pb-2.5"
+              >
+                <span class="text-charcoal-muted">Party Size</span>
+                <span
+                  id="conf-guests"
+                  class="font-medium text-charcoal text-right"
+                ></span>
+              </div>
+              <div
+                id="conf-events-row"
+                class="border-b border-sage-border pb-2.5"
+              >
+                <span class="text-charcoal-muted block mb-1.5"
+                  >Events Selected</span
+                >
+                <ul
+                  id="conf-events"
+                  class="list-disc list-inside text-charcoal space-y-1 text-xs sm:text-sm"
+                ></ul>
+              </div>
+              <div id="conf-dietary-row">
+                <span class="text-charcoal-muted block mb-1"
+                  >Dietary / Notes</span
+                >
+                <p
+                  id="conf-dietary"
+                  class="text-charcoal text-xs sm:text-sm italic"
+                ></p>
+              </div>
+            </div>
+
+            <button
+              id="rsvp-edit-btn"
+              type="button"
+              class="px-6 py-2.5 rounded-full border border-sage-border text-xs font-medium uppercase tracking-wider text-charcoal hover:bg-sage-mist transition-colors"
+            >
+              Update or Submit Another RSVP
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+       7. Clean Footer
+       ========================================================= -->
+    <footer
+      class="py-12 px-4 text-center bg-sage-mist border-t border-sage-border"
+    >
+      <div class="max-w-4xl mx-auto space-y-3">
+        <div class="font-serif text-3xl text-charcoal">
+          Jagruti <span class="italic text-gold-subtle">&amp;</span> Mayur
+        </div>
+        <p class="text-xs uppercase tracking-[0.25em] text-charcoal-muted">
+          February 11, 2027 • #JagrutiAndMayur
+        </p>
+        <p class="text-xs text-charcoal-muted/80 pt-2">
+          With love and gratitude — we cannot wait to celebrate with you.
+        </p>
+      </div>
+    </footer>
+
+    <!-- =========================================================
+       Interactive JavaScript
+       ========================================================= -->
+    <script>
+      (function () {
+        "use strict";
+        const RSVP_ENDPOINT =
+          "https://script.google.com/macros/s/AKfycbySmM7_bLh_N_G8ukGLRcJJtmrbQ7ra6lePf0Uq8A4oBNDITCDyJkmjJ1F-xqOFfGM5Tg/exec";
+
+        /* 1. Mobile Navigation Toggle */
+        const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuIconOpen = document.getElementById("menu-icon-open");
+        const menuIconClose = document.getElementById("menu-icon-close");
+        const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+        const languageSelects = [
+          document.getElementById("language-select-desktop"),
+          document.getElementById("language-select-mobile"),
+        ];
+        const gujaratiTranslations = {
+          Home: "મુખ્ય પૃષ્ઠ",
+          "Our Story": "અમારી પ્રેમકથા",
+          Schedule: "કાર્યક્રમ",
+          "Travel & Stay": "પ્રવાસ અને રોકાણ",
+          "Select language": "ભાષા પસંદ કરો",
+          "February 11, 2027": "૧૧ ફેબ્રુઆરી, ૨૦૨૭",
+          "Together With Their Families": "પરિવારજનો સાથે",
+          "Joyfully invite you to celebrate their love, laughter, and the beginning of forever.":
+            "તેમના પ્રેમ, આનંદ અને નવી શરૂઆતની ઉજવણીમાં આપને હાર્દિક આમંત્રણ આપે છે.",
+          "Vankar Samaj Bhavan, Joravarnagar":
+            "વણકર સમાજ ભવન, જોરાવરનગર",
+          Days: "દિવસ",
+          Hours: "કલાક",
+          Mins: "મિનિટ",
+          Secs: "સેકન્ડ",
+          "RSVP Now": "હમણાં પ્રતિભાવ આપો",
+          "View Schedule": "કાર્યક્રમ જુઓ",
+          "How It All Began": "અમારી શરૂઆત",
+          "The First Hello": "પહેલી મુલાકાત",
+          "Paths Crossed": "અમારા રસ્તા મળ્યા",
+          "What began as a casual conversation between Jagruti and Mayur quickly turned into hours of shared stories, effortless laughter, and the realization that something special had started.":
+            "જાગૃતિ અને મયૂર વચ્ચેની એક સામાન્ય વાતચીત ધીમે ધીમે લાંબી વાતો, નિખાલસ હાસ્ય અને એક ખાસ સંબંધની સુંદર શરૂઆતમાં બદલાઈ ગઈ.",
+          "The Proposal": "સગાઈનો પ્રસ્તાવ",
+          "Forever Begins": "સાથનો સુંદર આરંભ",
+          "Surrounded by quiet greenery at golden hour, Jagruti and Mayur promised to walk through every season of life side by side—marking the happiest \"yes\" of their lives.":
+            "સાંજના સુંદર સમયે, હરિયાળી વચ્ચે જાગૃતિ અને મયૂરે જીવનની દરેક ઋતુમાં સાથે ચાલવાનું વચન આપ્યું—તેમના જીવનનો સૌથી ખુશીભર્યો 'હા'.",
+          "The Big Day": "લગ્નનો શુભ દિવસ",
+          "Now, Jagruti & Mayur cannot wait to gather their cherished family and friends to celebrate their wedding day with music, warmth, and unforgettable memories.":
+            "જાગૃતિ અને મયૂર પોતાના પરિવારજનો અને મિત્રોની સાથે સંગીત, પ્રેમ અને યાદગાર પળોથી ભરેલો આ શુભ દિવસ ઉજવવા આતુર છે.",
+          "The Celebrations": "ઉજવણીના પ્રસંગો",
+          "Wedding Schedule": "લગ્ન કાર્યક્રમ",
+          "Join Jagruti & Mayur across two joyful days of traditions, music, and celebration.":
+            "પરંપરા, સંગીત અને આનંદથી ભરેલા બે દિવસના ઉત્સવમાં જાગૃતિ અને મયૂર સાથે જોડાઓ.",
+          "Day One • Morning": "પહેલો દિવસ • સવાર",
+          "Pastels & Floral": "હળવા રંગો અને ફૂલછાંટ",
+          "Mehendi & Haldi": "મહેંદી અને હળદર",
+          "A sun-drenched garden celebration with intricate henna artistry, marigold petals, acoustic melodies, and refreshing afternoon bites.":
+            "મહેંદીની સુંદર કળા, ગલગોટાનાં ફૂલો, મધુર સંગીત અને સ્વાદિષ્ટ નાસ્તા સાથે આનંદભરી ઉજવણી.",
+          "Wednesday, February 10, 2027": "બુધવાર, ૧૦ ફેબ્રુઆરી, ૨૦૨૭",
+          "11:00 AM – 3:00 PM": "સવારે ૧૧:૦૦થી બપોરે ૩:૦૦",
+          "Karol, Surendranagar, Gujarat": "કરોલ, સુરેન્દ્રનગર, ગુજરાત",
+          "Day One • Evening": "પહેલો દિવસ • સાંજ",
+          "Festive Indo-Western": "ઉત્સવી ઇન્ડો-વેસ્ટર્ન",
+          "Sangeet Night": "સંગીત સંધ્યા",
+          "An unforgettable evening under fairy lights with family dance performances, live music, signature cocktails, and a starlit dinner.":
+            "ઝગમગતી રોશની, પરિવારનાં નૃત્યો, જીવંત સંગીત અને તારાઓની છાંયે રાત્રિભોજન સાથે યાદગાર સાંજ.",
+          "7:00 PM – 11:00 PM": "સાંજે ૭:૦૦થી રાત્રે ૧૧:૦૦",
+          "Day Two • Morning": "બીજો દિવસ • સવાર",
+          "Traditional Indian": "પરંપરાગત ભારતીય",
+          "Wedding Ceremony": "લગ્નવિધિ",
+          "Celebrate the sacred union of Jagruti & Mayur under a traditional mandap, followed by a celebratory lunch with family.":
+            "પરંપરાગત મંડપમાં જાગૃતિ અને મયૂરના પવિત્ર લગ્નબંધનની ઉજવણીમાં જોડાઓ. ત્યારબાદ પરિવાર સાથે ભોજન રહેશે.",
+          "Thursday, February 11, 2027": "ગુરુવાર, ૧૧ ફેબ્રુઆરી, ૨૦૨૭",
+          "10:30 AM – 1:30 PM": "સવારે ૧૦:૩૦થી બપોરે ૧:૩૦",
+          "Day Two • Evening": "બીજો દિવસ • સાંજ",
+          "Formal / Black Tie": "ઔપચારિક પોશાક",
+          "Evening Reception": "સાંજનું સ્વાગત સમારંભ",
+          "Raise a toast to the newlyweds at a candlelit gala featuring heartfelt speeches, a curated multi-course dinner, and dancing into the night.":
+            "હૃદયસ્પર્શી શુભેચ્છાઓ, ખાસ ભોજન અને રાત સુધીના નૃત્ય સાથે નવદંપતીના સન્માનમાં યાદગાર સમારંભ.",
+          "7:30 PM Onwards": "સાંજે ૭:૩૦ વાગ્યાથી",
+          "Accommodations & Logistics": "રોકાણ અને વ્યવસ્થા",
+          "Haldi, Sangeet, the reception, and guest stay will be in Karol. The wedding ceremony will be at Vankar Samaj Bhavan in Joravarnagar.":
+            "હળદર, સંગીત, સ્વાગત સમારંભ અને મહેમાનોનું રોકાણ કરોલમાં રહેશે. લગ્નવિધિ જોરાવરનગરના વણકર સમાજ ભવનમાં યોજાશે.",
+          "Haldi, Sangeet, Reception & Stay":
+            "હળદર, સંગીત, સ્વાગત સમારંભ અને રોકાણ",
+          "Karol, Surendranagar": "કરોલ, સુરેન્દ્રનગર",
+          "The celebrations on February 10 and the evening reception on February 11, along with guest accommodation, will be in Karol, Gujarat.":
+            "૧૦ ફેબ્રુઆરીના પ્રસંગો, ૧૧ ફેબ્રુઆરીનો સાંજનો સ્વાગત સમારંભ અને મહેમાનોનું રોકાણ કરોલ, ગુજરાતમાં રહેશે.",
+          "Open Karol location in Google Maps":
+            "કરોલનું સ્થળ Google Maps પર જુઓ",
+          "Vankar Samaj Bhavan": "વણકર સમાજ ભવન",
+          "Join us for the wedding ceremony in Joravarnagar, Surendranagar, Gujarat.":
+            "જોરાવરનગર, સુરેન્દ્રનગર, ગુજરાતમાં યોજાનારી લગ્નવિધિમાં પધારો.",
+          "Open ceremony location in Google Maps":
+            "લગ્નવિધિનું સ્થળ Google Maps પર જુઓ",
+          "Kindly Reply By January 31, 2027":
+            "કૃપા કરીને ૩૧ જાન્યુઆરી, ૨૦૨૭ સુધીમાં જવાબ આપો",
+          "Let Jagruti & Mayur know which celebrations you will be joining.":
+            "તમે કયા પ્રસંગોમાં જોડાશો તે જાગૃતિ અને મયૂરને જણાવો.",
+          "Full Name *": "પૂરું નામ *",
+          "Email Address *": "ઈમેલ સરનામું *",
+          "Will You Be Attending? *": "શું તમે ઉપસ્થિત રહેશો? *",
+          "Joyfully Accepts": "હર્ષભેર ઉપસ્થિત રહીશ",
+          "Can’t wait to celebrate!": "ઉજવણીની આતુરતાથી રાહ જોઉં છું!",
+          "Regretfully Declines": "અફસોસ સાથે ઉપસ્થિત રહી શકીશ નહીં",
+          "Sending love from afar": "દૂરથી પ્રેમભરી શુભેચ્છાઓ",
+          "Number of Guests (Including You)": "મહેમાનોની સંખ્યા (તમારા સહિત)",
+          "1 Guest": "૧ મહેમાન",
+          "2 Guests": "૨ મહેમાનો",
+          "3 Guests": "૩ મહેમાનો",
+          "4 Guests": "૪ મહેમાનો",
+          "Events You Will Attend *": "તમે ઉપસ્થિત રહેશો તે પ્રસંગો *",
+          "— Feb 10, 11:00 AM": "— ૧૦ ફેબ્રુઆરી, સવારે ૧૧:૦૦",
+          "— Feb 10, 7:00 PM": "— ૧૦ ફેબ્રુઆરી, સાંજે ૭:૦૦",
+          "— Feb 11, 10:30 AM": "— ૧૧ ફેબ્રુઆરી, સવારે ૧૦:૩૦",
+          "— Feb 11, 7:30 PM": "— ૧૧ ફેબ્રુઆરી, સાંજે ૭:૩૦",
+          "Dietary Preferences or Notes (Optional)":
+            "ખોરાક અંગેની પસંદગી અથવા નોંધ (વૈકલ્પિક)",
+          "Confirm RSVP": "પ્રતિભાવની પુષ્ટિ કરો",
+          "Your Response": "તમારો પ્રતિભાવ",
+          "Thank You!": "આભાર!",
+          "Jagruti & Mayur are thrilled to celebrate with you!":
+            "જાગૃતિ અને મયૂર તમારી સાથે ઉજવણી કરવા આતુર છે!",
+          "Sending...": "મોકલી રહ્યું છે...",
+          Guest: "મહેમાન",
+          Status: "પ્રતિભાવ",
+          "Party Size": "મહેમાનોની સંખ્યા",
+          "Events Selected": "પસંદ કરેલા પ્રસંગો",
+          "Dietary / Notes": "ખોરાક / નોંધ",
+          "Update or Submit Another RSVP":
+            "પ્રતિભાવ સુધારો અથવા બીજો પ્રતિભાવ આપો",
+          "February 11, 2027 • #JagrutiAndMayur":
+            "૧૧ ફેબ્રુઆરી, ૨૦૨૭ • #JagrutiAndMayur",
+          "With love and gratitude — we cannot wait to celebrate with you.":
+            "પ્રેમ અને આભાર સાથે — તમારી સાથે ઉજવણી કરવા અમે આતુર છીએ.",
+        };
+        const reverseTranslations = Object.fromEntries(
+          Object.entries(gujaratiTranslations).map(([english, gujarati]) => [
+            gujarati,
+            english,
+          ]),
+        );
+        const eventTranslations = {
+          "Mehendi & Haldi (Feb 10)": "મહેંદી અને હળદર (૧૦ ફેબ્રુઆરી)",
+          "Sangeet Night (Feb 10)": "સંગીત સંધ્યા (૧૦ ફેબ્રુઆરી)",
+          "Wedding Ceremony (Feb 11)": "લગ્નવિધિ (૧૧ ફેબ્રુઆરી)",
+          "Evening Reception (Feb 11)": "સાંજનો સ્વાગત સમારંભ (૧૧ ફેબ્રુઆરી)",
+        };
+        const savedLanguage = localStorage.getItem("wedding-language");
+        const browserPrefersGujarati = (navigator.languages || [
+          navigator.language,
+        ]).some((language) => language?.toLowerCase().startsWith("gu"));
+        let currentLanguage =
+          savedLanguage === "gu" || savedLanguage === "en"
+            ? savedLanguage
+            : browserPrefersGujarati
+              ? "gu"
+              : "en";
+        let lastRsvp = null;
+
+        function translateTextNodes(language) {
+          const translations =
+            language === "gu" ? gujaratiTranslations : reverseTranslations;
+          const walker = document.createTreeWalker(
+            document.body,
+            NodeFilter.SHOW_TEXT,
+          );
+          let node;
+
+          while ((node = walker.nextNode())) {
+            const text = node.nodeValue;
+            const trimmedText = text.trim().replace(/\s+/g, " ");
+            const translatedText = translations[trimmedText];
+            if (translatedText) {
+              const leadingSpace = text.match(/^\s*/)[0];
+              const trailingSpace = text.match(/\s*$/)[0];
+              node.nodeValue = `${leadingSpace}${translatedText}${trailingSpace}`;
+            }
+          }
+        }
+
+        function renderRsvpConfirmation(response) {
+          if (!response) return;
+          const isGujarati = currentLanguage === "gu";
+          const isAttending = response.attendance === "Joyfully Accepts";
+          const firstName = response.name.split(/\s+/)[0];
+          document.getElementById("conf-heading").textContent = isGujarati
+            ? isAttending
+              ? `આભાર, ${firstName}!`
+              : `${firstName}, તમારી ખોટ પડશે`
+            : isAttending
+              ? `Thank You, ${firstName}!`
+              : `We’ll Miss You, ${firstName}`;
+            document.getElementById("conf-subtext").textContent = isGujarati
+              ? isAttending
+                ? "જાગૃતિ અને મયૂર તમારી સાથે ઉજવણી કરવા આતુર છે!"
+                : "જાગૃતિ અને મયૂરને જાણ કરવા બદલ આભાર. તેમના ખાસ દિવસે તેઓ તમને યાદ કરશે!"
+              : isAttending
+                ? "Jagruti & Mayur are thrilled to celebrate with you!"
+                : "Thank you for letting Jagruti & Mayur know. They will be thinking of you on their special day!";
+
+          document.getElementById("conf-name").textContent =
+            `${response.name} (${response.email})`;
+          document.getElementById("conf-status").textContent = isGujarati
+            ? isAttending
+              ? "હર્ષભેર ઉપસ્થિત રહીશ"
+              : "ઉપસ્થિત રહી શકીશ નહીં"
+            : response.attendance;
+
+          document
+            .getElementById("conf-guests-row")
+            .classList.toggle("hidden", !isAttending);
+          document
+            .getElementById("conf-events-row")
+            .classList.toggle("hidden", !isAttending);
+          document
+            .getElementById("conf-dietary-row")
+            .classList.toggle("hidden", !isAttending || !response.dietary);
+
+          if (isAttending) {
+            const guestCount = Number(response.guests);
+            document.getElementById("conf-guests").textContent = isGujarati
+              ? `${["૦", "૧", "૨", "૩", "૪"][guestCount]} ${guestCount === 1 ? "મહેમાન" : "મહેમાનો"}`
+              : `${guestCount} ${guestCount === 1 ? "Guest" : "Guests"}`;
+            const eventsList = document.getElementById("conf-events");
+            eventsList.replaceChildren();
+            response.events.forEach((event) => {
+              const item = document.createElement("li");
+              item.textContent = isGujarati
+                ? eventTranslations[event] || event
+                : event;
+              eventsList.appendChild(item);
+            });
+            document.getElementById("conf-dietary").textContent =
+              response.dietary;
+          }
+        }
+
+        function applyLanguage(language) {
+          currentLanguage = language;
+          document.documentElement.lang = language;
+          document.documentElement.classList.toggle(
+            "gujarati",
+            language === "gu",
+          );
+          document.title =
+            language === "gu"
+              ? "જાગૃતિ અને મયૂર — ૧૧ ફેબ્રુઆરી, ૨૦૨૭"
+              : "Jagruti & Mayur — February 11, 2027";
+          translateTextNodes(language);
+          languageSelects.forEach((select) => {
+            select.value = language;
+            select.setAttribute(
+              "aria-label",
+              language === "gu" ? "ભાષા પસંદ કરો" : "Select language",
+            );
+          });
+          document
+            .getElementById("mobile-menu-btn")
+            .setAttribute(
+              "aria-label",
+              language === "gu" ? "મેનૂ ખોલો અથવા બંધ કરો" : "Toggle navigation menu",
+            );
+          document
+            .getElementById("countdown")
+            .setAttribute(
+              "aria-label",
+              language === "gu"
+                ? "જાગૃતિ અને મયૂરના લગ્ન સુધીનો સમય"
+                : "Countdown to Jagruti and Mayur's wedding",
+            );
+          document.getElementById("guest-name").placeholder =
+            language === "gu" ? "દા.ત., અનન્યા પટેલ" : "e.g., Ananya Patel";
+          document.getElementById("guest-email").placeholder =
+            language === "gu"
+              ? "દા.ત., ananya@example.com"
+              : "e.g., ananya@example.com";
+          document.getElementById("dietary-notes").placeholder =
+            language === "gu"
+              ? "દા.ત., શાકાહારી, જૈન, ગ્લૂટન-ફ્રી, એલર્જી અથવા સંગીત માટે ગીતની વિનંતી"
+              : "e.g., Vegetarian, Jain, gluten-free, allergies, or a song request for the Sangeet!";
+          renderRsvpConfirmation(lastRsvp);
+        }
+
+        languageSelects.forEach((select) => {
+          select.addEventListener("change", () => {
+            localStorage.setItem("wedding-language", select.value);
+            applyLanguage(select.value);
+          });
+        });
+        applyLanguage(currentLanguage);
+
+        function setMobileMenu(open) {
+          mobileMenu.classList.toggle("hidden", !open);
+          menuIconOpen.classList.toggle("hidden", open);
+          menuIconClose.classList.toggle("hidden", !open);
+          mobileMenuBtn.setAttribute("aria-expanded", String(open));
+        }
+
+        mobileMenuBtn.addEventListener("click", () => {
+          setMobileMenu(mobileMenu.classList.contains("hidden"));
+        });
+
+        mobileNavLinks.forEach((link) => {
+          link.addEventListener("click", () => setMobileMenu(false));
+        });
+
+        /* 2. Live Countdown Timer (February 11, 2027 10:30 AM IST) */
+        const weddingTarget = new Date("2027-02-11T10:30:00+05:30").getTime();
+        const cdDays = document.getElementById("cd-days");
+        const cdHours = document.getElementById("cd-hours");
+        const cdMinutes = document.getElementById("cd-minutes");
+        const cdSeconds = document.getElementById("cd-seconds");
+
+        function padZero(n) {
+          return String(n).padStart(2, "0");
+        }
+
+        function updateCountdown() {
+          const diff = Math.max(0, weddingTarget - Date.now());
+          cdDays.textContent = padZero(
+            Math.floor(diff / (1000 * 60 * 60 * 24)),
+          );
+          cdHours.textContent = padZero(
+            Math.floor((diff / (1000 * 60 * 60)) % 24),
+          );
+          cdMinutes.textContent = padZero(
+            Math.floor((diff / (1000 * 60)) % 60),
+          );
+          cdSeconds.textContent = padZero(Math.floor((diff / 1000) % 60));
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        /* 3. Interactive RSVP Form with Validation & Confirmation */
+        const rsvpForm = document.getElementById("rsvp-form");
+        const rsvpError = document.getElementById("rsvp-error");
+        const attendingDetails = document.getElementById("attending-details");
+        const rsvpConfirmation = document.getElementById("rsvp-confirmation");
+        const rsvpEditBtn = document.getElementById("rsvp-edit-btn");
+        const rsvpSubmitButton = rsvpForm.querySelector('button[type="submit"]');
+        let isSubmitting = false;
+
+        document
+          .querySelectorAll('input[name="attendance"]')
+          .forEach((radio) => {
+            radio.addEventListener("change", (e) => {
+              attendingDetails.classList.toggle(
+                "hidden",
+                e.target.value !== "Joyfully Accepts",
+              );
+            });
+          });
+
+        function showError(msg) {
+          rsvpError.textContent = msg;
+          rsvpError.classList.remove("hidden");
+        }
+
+        rsvpForm.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          if (isSubmitting) return;
+          rsvpError.classList.add("hidden");
+
+          const name = document.getElementById("guest-name").value.trim();
+          const email = document.getElementById("guest-email").value.trim();
+          const attendance = document.querySelector(
+            'input[name="attendance"]:checked',
+          ).value;
+          const guests = document.getElementById("guest-count").value;
+          const dietary = document.getElementById("dietary-notes").value.trim();
+          const checkedEvents = Array.from(
+            document.querySelectorAll('input[name="events"]:checked'),
+          ).map((el) => el.value);
+
+          if (!name) {
+            showError(
+              currentLanguage === "gu"
+                ? "કૃપા કરીને તમારું પૂરું નામ લખો."
+                : "Please enter your full name.",
+            );
+            document.getElementById("guest-name").focus();
+            return;
+          }
+          if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            showError(
+              currentLanguage === "gu"
+                ? "કૃપા કરીને યોગ્ય ઈમેલ સરનામું લખો."
+                : "Please enter a valid email address.",
+            );
+            document.getElementById("guest-email").focus();
+            return;
+          }
+          if (attendance === "Joyfully Accepts" && checkedEvents.length === 0) {
+            showError(
+              currentLanguage === "gu"
+                ? "કૃપા કરીને તમે હાજર રહેશો તે ઓછામાં ઓછો એક પ્રસંગ પસંદ કરો."
+                : "Please select at least one event you plan to attend.",
+            );
+            return;
+          }
+
+          const attending = attendance === "Joyfully Accepts";
+          const response = {
+            name,
+            email,
+            attendance,
+            guests: attending ? guests : "",
+            dietary: attending ? dietary : "",
+            events: attending ? checkedEvents : [],
+          };
+          const requestBody = new URLSearchParams({
+            payload: JSON.stringify(response),
+          });
+
+          isSubmitting = true;
+          rsvpSubmitButton.disabled = true;
+          rsvpSubmitButton.textContent =
+            currentLanguage === "gu" ? "મોકલી રહ્યું છે..." : "Sending...";
+
+          try {
+            await fetch(RSVP_ENDPOINT, {
+              method: "POST",
+              mode: "no-cors",
+              body: requestBody,
+            });
+            lastRsvp = response;
+            renderRsvpConfirmation(lastRsvp);
+            rsvpForm.classList.add("hidden");
+            rsvpConfirmation.classList.remove("hidden");
+          } catch (error) {
+            console.error("RSVP submission failed:", error);
+            showError(
+              currentLanguage === "gu"
+                ? "પ્રતિભાવ મોકલી શકાયો નથી. કૃપા કરીને ફરી પ્રયાસ કરો."
+                : "We couldn't send your RSVP. Please check your connection and try again.",
+            );
+          } finally {
+            isSubmitting = false;
+            rsvpSubmitButton.disabled = false;
+            rsvpSubmitButton.textContent =
+              currentLanguage === "gu"
+                ? "પ્રતિભાવની પુષ્ટિ કરો"
+                : "Confirm RSVP";
+          }
+        });
+
+        rsvpEditBtn.addEventListener("click", () => {
+          rsvpConfirmation.classList.add("hidden");
+          rsvpForm.classList.remove("hidden");
+        });
+      })();
+    </script>
+  </body>
+</html>
